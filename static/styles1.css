@@ -1,0 +1,143 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6F0FA;
+}
+
+/* Header styling */
+header {
+    background-color: #1B3A57;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 150px;
+    background-color: #1B3A57;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 60px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #4682B4;
+}
+/* button styling */
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+main {
+    margin-left: 170px;
+    padding: 20px;
+    flex: 1;
+}
+
+main .content {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.buttons button {
+    background-color: #1B3A57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}	
+
+.buttons button:hover {
+    background-color: #4682B4;
+}
+
+/* Main content styling */
+.gallery {
+    margin-left: 170px;
+    padding: 20px;
+}
+
+.image-container {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.image-container img {
+	max-width: 100%;
+    height: auto;
+    width: 250px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #2F4F4F;
+}
+
+/* Paragraph styling */
+.paragraph {
+    margin-left: 170px;
+    padding: 20px;
+    border-radius: 5px;
+	line-height: 1.6;
+	letter-spacing: 0.05em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1B3A57;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	text-align: center;
+}
