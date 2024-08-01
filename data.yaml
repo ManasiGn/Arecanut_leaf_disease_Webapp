@@ -1,0 +1,13 @@
+train: C:/Users/ACER/Desktop/project/arecanut leaf spot diseases.v2i.yolov8 (1)/train/images
+val: C:/Users/ACER/Desktop/project/arecanut leaf spot diseases.v2i.yolov8 (1)/valid/images
+test: C:/Users/ACER/Desktop/project/arecanut leaf spot diseases.v2i.yolov8 (1)/test/images
+
+nc: 2
+names: ['diseased', 'healthy']
+
+roboflow:
+  workspace: project-ofkh0
+  project: arecanut-leaf-spot-diseases
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project-ofkh0/arecanut-leaf-spot-diseases/dataset/2
