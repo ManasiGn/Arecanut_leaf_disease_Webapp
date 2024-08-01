@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Information</h1>
+    </header>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('hello_world') }}">Home</a></li>
+					<li><a href="{{ url_for('information') }}">Information</a></li>
+                    <li><a href="result.html">Result</a></li>
+                </ul>
+            </nav>
+        </aside>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/img4.jpg') }}" alt="Image 1">
+            <p class="caption">Stage 1</p>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="Image 2">
+            <p class="caption">Stage 2</p>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/img5.jpg') }}" alt="Image 3">
+            <p class="caption">Stage 3</p>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="Image 4">
+            <p class="caption">Stage 4</p>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p><b>Precaution</b><br> * Soil-test-based balanced nutrient management should strictly be followed to maintain the healthy status.<br>* Wet conditions promote disease, so water trees at the base and be careful not to splash water on leaves.<br>* Avoid dry spots, overfertilizing with nitrogen, and maintain as high a cutting height as possible.</p>
+    </div>
+    <footer>
+        <p>@copywrite DigiSpot</p>
+    </footer>
+</body>
+</html>
